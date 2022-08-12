@@ -1,41 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js" defer></script>
-    <title>Busca Cep</title>
-</head>
-<body>
-    
-      <section class="containerCep" >
-        <fieldset id="formContainer">
-            <legend id="title">Cep</legend>
-            <input  type="text" id="inputForm" id="inputCep">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+         <link rel="stylesheet" href="../css/style.css"> 
+        <script src="../js/script.js" defer></script>
+        <title>Busca Cep</title>
+    </head>
+  <body>
+    <section>
+        <form>
+            <div id="title-container">
+              <img src="./image/location.png" alt="">
+              <h1>Digite o número do Cep</h1>
+            </div>
+          <div class="div-items">
+            <input required type="text" id="inputCep" class="input" >
+            <label for="inputCep" id="title">Cep</label>
+          </div>
 
-            <legend id="title">Logradouro</legend>
-            <input type="text" id="inputForm" id="inputLogr">
+             <div class="div-items">
+               <input required type="text" id="inputLogr" class="input">
+               <label for="inputLogr" id="title">Logradouro</label>
+             </div>
 
-            <legend id="title">Bairro</legend>
-            <input type="text" id="inputForm" id="inputBairro">
+            <div class="div-items">
+              <input required type="text" id="inputBairro" class="input">
+              <label id="title">Bairro</label>
+            </div>
 
-            <legend id="title">Numero</legend>
-            <input type="text" id="inputForm" id="inputNumero">
+              <div class="div-items">
+                <input required type="text" id="inputNumero" class="input">
+                <label id="title">Numero</label>
+              </div>
 
-            <legend id="title">Complemento</legend>
-            <input type="text" id="inputForm" id="inputCompl">
+              <div class="div-items">
+                <input required type="text" id="inputCompl" class="input" >
+                <label id="title">Complemento</label>
+              </div>
 
-            <legend id="title">Cidade</legend>
-            <input type="text" id="inputForm" id="inputCidade">
+            <div class="div-items">
+              <input required type="text" id="inputCidade" class="input">
+              <label id="title">Cidade</label>
+            </div>
 
-            <legend id="title">Estado</legend>
-            <input type="text" id="inputForm" id="inputEstado">
-        </fieldset>
+          <div class="div-items">
+            <input required type="text" id="inputEstado" >
+            <label id="title">Estado</label>
+          </div> 
 
-      </section>  
-  
-    
-</body>
+          <div class="div-btn">
+          <button class="btn">Enviar</button>
+        </div>
+        </form>
+      </section>
+  </body>
 </html>
